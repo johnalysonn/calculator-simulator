@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle at -14.09% 20.12%, #0a0014 0, #0a0014 50%, #0a0014 100%);
+    
+}
+input{
+    background: transparent;
+    outline: none;
+    border: none;
+    border: 2px solid purple;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+}
+main#container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid purple;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Righteous', cursive;
+}
+#containernum{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.numdivision{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 5px;
+}
+.numdivision input{
+    width: calc(100%/4);
+}
+#resultdiv input{
+    flex: 2;
+}
+input[type="text"]{
+    background-color: rgb(24, 0, 24);
+}
+
