@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Righteous&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -46,12 +45,17 @@ main#container{
 }
 .numdivision input{
     width: calc(100%/4);
+    transition: 0.2s all;
+}
+.numdivision input:hover{
+    border: 2px solid rgb(218, 16, 218);
 }
 #resultdiv input{
     flex: 2;
 }
 input[type="text"]{
-    background-color: rgb(24, 0, 24);
+    
+    padding: 6px 10px;
 }
 #container-icons{
     position: absolute;
@@ -65,10 +69,10 @@ input[type="text"]{
 }
 #container-icons span{
     animation: Animation 5s linear infinite;
-    animation-duration: calc(20s / var(--i));
+    animation-duration: calc(120s / var(--i));
     font-weight: 700;
-    color: rgb(230, 7, 230);
-
+    color: rgb(255, 251, 0);
+    transition: 5s all;
 }
 #container-icons span:nth-child(even){
     color: purple;
@@ -79,8 +83,7 @@ input[type="text"]{
         transform: translateY(100vh) scale(0);
     }
     100%{
-        transform: translateY(-10vh) scale(1);
-        font-size: 1.5em;
+        transform: translateY(-10vh) scale(2);
     }
 }
 

@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Righteous&display=swap" rel="stylesheet">
-
     <title>Calculator</title>
 </head>
 <body>
@@ -34,36 +30,36 @@
     <!-- Calc -->
     <main id="container">
         <div>
-            <input type="text" name="" id="" disabled>
+            <input type="text" id="screen" disabled>
         </div>
         <div id="containernum">
             <div class="numdivision">
-                <input type="button" value="7" id="ai">
-                <input type="button" value="8">
-                <input type="button" value="9">
-                <input type="button" value="DEL">
+                <input class="actionbutton" type="button" value="8" onclick="actionbutton(value)">
+                <input class="actionbutton" type="button" value="7" onclick="actionbutton(value)">
+                <input class="actionbutton" type="button" value="9" onclick="actionbutton(value)">
+                <input type="button" value="DEL" id="delete">
             </div>
             <div class="numdivision">
-                <input type="button" value="4">
-                <input type="button" value="5">
-                <input type="button" value="6">
-                <input type="button" value="+">
+                <input class="actionbutton" type="button" value="4" onclick="actionbutton(value)">
+                <input class="actionbutton" type="button" value="5" onclick="actionbutton(value)">
+                <input class="actionbutton" type="button" value="6" onclick="actionbutton(value)">
+                <input class="actionbutton" type="button" value="+" onclick="actionbutton(value)">
             </div>
             <div class="numdivision">
-                <input type="button" value="1">
-                <input type="button" value="2">
-                <input type="button" value="3">
-                <input type="button" value="-">
+                <input class="actionbutton" type="button" value="2" onclick="actionbutton(value)">
+                <input class="actionbutton" type="button" value="1" onclick="actionbutton(value)">
+                <input class="actionbutton" type="button" value="3" onclick="actionbutton(value)">
+                <input class="actionbutton" type="button" value="-" onclick="actionbutton(value)">
             </div>
             <div class="numdivision">
-                <input type="button" value=".">
-                <input type="button" value="0">
-                <input type="button" value="/">
-                <input type="button" value="*">
+                <input class="actionbutton" type="button" value="." onclick="actionbutton(value)">
+                <input class="actionbutton" type="button" value="0" onclick="actionbutton(value)">
+                <input class="actionbutton" type="button" value="/" onclick="actionbutton(value)">
+                <input class="actionbutton" type="button" value="*" onclick="actionbutton(value)">
             </div>
             <div class="numdivision" id="resultdiv">
-                <input type="button" value="RESET">
-                <input type="button" value="=">
+                <input type="button" value="RESET" id="reset">
+                <input type="button" value="=" id="result">
             </div>
         </div>
     </main>
