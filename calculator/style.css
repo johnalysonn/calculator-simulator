@@ -7,6 +7,7 @@
 body{
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,6 +31,7 @@ main#container{
     border-radius: 20px;
     padding: 20px;
     font-family: 'Righteous', cursive;
+    z-index: 100;
 }
 #containernum{
     display: flex;
@@ -50,5 +52,35 @@ main#container{
 }
 input[type="text"]{
     background-color: rgb(24, 0, 24);
+}
+#container-icons{
+    position: absolute;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    z-index: 0;
+    font-size: 1.3em;
+}
+#container-icons span{
+    animation: Animation 5s linear infinite;
+    animation-duration: calc(20s / var(--i));
+    font-weight: 700;
+    color: rgb(230, 7, 230);
+
+}
+#container-icons span:nth-child(even){
+    color: purple;
+}
+
+@keyframes Animation {
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+        font-size: 1.5em;
+    }
 }
 
