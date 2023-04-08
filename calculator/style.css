@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,12 +11,13 @@ body{
     height: 100vh;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-image: radial-gradient(circle at -14.09% 20.12%, #0a0014 0, #0a0014 50%, #0a0014 100%);
-    
+    flex-direction: column;
 }
 input{
+    font-family: 'Righteous', cursive;
     background: transparent;
     outline: none;
     border: none;
@@ -29,7 +33,6 @@ main#container{
     border: 2px solid purple;
     border-radius: 20px;
     padding: 20px;
-    font-family: 'Righteous', cursive;
     z-index: 100;
 }
 #containernum{
@@ -76,6 +79,35 @@ input[type="text"]{
 }
 #container-icons span:nth-child(even){
     color: purple;
+}
+div#container-text{
+    text-align: center;
+    width: 100%;
+}
+div#container-text h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-family: 'Bebas Neue', cursive;
+}
+div#container-text h1, span{
+    color: white;
+    font-weight: 700;
+}
+div#container-text span{
+    font-size: 1.3em;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: purple;
+    width: 300px;
+}
+footer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Righteous', cursive;
 }
 
 @keyframes Animation {

@@ -3,6 +3,18 @@ let reset = document.querySelector('input#reset')
 let remove = document.querySelector('input#delete');
 let calc = document.querySelector('input#result')
 
+// Multiple texts
+
+var typed = new Typed('#multiple-text', {
+    strings: ["Adittion", "Subtraction", "division", "multiplication"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+})
+
+// Actions
+
 function actionbutton(valor){
     if(screen.value == 'ERROR!'){
         screen.value = valor;
@@ -31,3 +43,5 @@ calc.onclick = function(){
         screen.value = 'ERROR!';
     }
 }
+
+
