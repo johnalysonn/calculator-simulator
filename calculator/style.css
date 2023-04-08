@@ -9,9 +9,10 @@
 body{
     width: 100vw;
     height: 100vh;
+    max-height: 100vh;
     overflow: hidden;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-image: radial-gradient(circle at -14.09% 20.12%, #0a0014 0, #0a0014 50%, #0a0014 100%);
     flex-direction: column;
@@ -83,6 +84,7 @@ input[type="text"]{
 div#container-text{
     text-align: center;
     width: 100%;
+    padding: 20px;
 }
 div#container-text h1{
     font-size: 3rem;
