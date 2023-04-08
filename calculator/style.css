@@ -108,6 +108,7 @@ footer{
     align-items: center;
     color: white;
     font-family: 'Righteous', cursive;
+    padding: 20px;
 }
 
 @keyframes Animation {
