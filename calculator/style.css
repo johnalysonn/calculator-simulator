@@ -12,10 +12,11 @@ body{
     max-height: 100vh;
     overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-around; */
     align-items: center;
     background-image: radial-gradient(circle at -14.09% 20.12%, #0a0014 0, #0a0014 50%, #0a0014 100%);
     flex-direction: column;
+    position: relative;
 }
 input{
     font-family: 'Righteous', cursive;
@@ -27,7 +28,14 @@ input{
     padding: 5px;
     color: white;
 }
-main#container{
+main{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container-main{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -35,6 +43,11 @@ main#container{
     border-radius: 20px;
     padding: 20px;
     z-index: 100;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #containernum{
     display: flex;
@@ -85,6 +98,7 @@ div#container-text{
     text-align: center;
     width: 100%;
     padding: 20px;
+    margin-top: 20px;
 }
 div#container-text h1{
     font-size: 3rem;
@@ -103,15 +117,6 @@ div#container-text span{
     color: purple;
     width: 300px;
 }
-footer{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: 'Righteous', cursive;
-    padding: 20px;
-}
 
 @keyframes Animation {
     0%{
@@ -121,4 +126,3 @@ footer{
         transform: translateY(-10vh) scale(2);
     }
 }
-
