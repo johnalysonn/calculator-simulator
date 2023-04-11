@@ -1,4 +1,4 @@
-# Similação de Calculadora Básica
+# Simulação de Calculadora Básica
 
 Esta calculadora, feita com HTML, CSS e JS, foi feita com o intuito de treinar o uso dessas ferramentas em conjunto. Essa simulação, simula uma calculadora básica utilizando de métodos básicos de cálculo do JavaScript.
 
